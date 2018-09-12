@@ -1,7 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'ubuntu:16.04'
+    }
+
+  }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         input(message: 'asd', ok: 'y')
       }
