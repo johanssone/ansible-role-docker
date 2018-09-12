@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        input(message: 'asd', ok: 'y')
+        echo 'Hello World'
       }
     }
   }
